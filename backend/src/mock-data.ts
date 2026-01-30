@@ -1,0 +1,259 @@
+// Mock Data para el prototipo - Banco Multimoney
+
+export interface Customer {
+  id: string;
+  documentType: string;
+  documentNumber: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  dateOfBirth: string;
+  address: string;
+}
+
+export interface Account {
+  id: string;
+  customerId: string;
+  accountNumber: string;
+  accountType: 'SAVINGS' | 'CHECKING';
+  currency: 'USD' | 'CRC';
+  balance: number;
+  availableBalance: number;
+  status: 'ACTIVE' | 'BLOCKED' | 'CLOSED';
+  openDate: string;
+  interestRate?: number;
+}
+
+export interface Transaction {
+  id: string;
+  accountId: string;
+  type: 'DEPOSIT' | 'WITHDRAWAL' | 'TRANSFER' | 'FEE' | 'INTEREST';
+  amount: number;
+  currency: string;
+  description: string;
+  date: string;
+  balance: number;
+  reference: string;
+}
+
+export interface Transfer {
+  id: string;
+  fromAccountId: string;
+  toAccountId: string;
+  amount: number;
+  currency: string;
+  description: string;
+  type: 'OWN' | 'THIRD_PARTY' | 'ACH';
+  status: 'PENDING' | 'COMPLETED' | 'REJECTED';
+  date: string;
+  reference: string;
+}
+
+export interface CDP {
+  id: string;
+  customerId: string;
+  cdpNumber: string;
+  amount: number;
+  currency: string;
+  interestRate: number;
+  termMonths: number;
+  startDate: string;
+  maturityDate: string;
+  status: 'ACTIVE' | 'MATURED' | 'CANCELLED';
+  autoRenew: boolean;
+}
+
+// Datos Mock
+export const MOCK_CUSTOMERS: Customer[] = [
+  {
+    id: '1',
+    documentType: 'CEDULA',
+    documentNumber: '1-1234-5678',
+    firstName: 'Juan',
+    lastName: 'Pérez González',
+    email: 'demo@multimoney.com',
+    phone: '+506 8888-9999',
+    dateOfBirth: '1985-05-15',
+    address: 'San José, Costa Rica',
+  },
+  {
+    id: '2',
+    documentType: 'CEDULA',
+    documentNumber: '2-9876-5432',
+    firstName: 'María',
+    lastName: 'Rodríguez López',
+    email: 'maria@multimoney.com',
+    phone: '+506 7777-6666',
+    dateOfBirth: '1990-08-20',
+    address: 'Heredia, Costa Rica',
+  },
+];
+
+export const MOCK_ACCOUNTS: Account[] = [
+  {
+    id: 'acc-1',
+    customerId: '1',
+    accountNumber: '001-23456-78',
+    accountType: 'SAVINGS',
+    currency: 'CRC',
+    balance: 5250000.50,
+    availableBalance: 5250000.50,
+    status: 'ACTIVE',
+    openDate: '2020-01-15',
+    interestRate: 3.5,
+  },
+  {
+    id: 'acc-2',
+    customerId: '1',
+    accountNumber: '001-23456-79',
+    accountType: 'CHECKING',
+    currency: 'USD',
+    balance: 12500.75,
+    availableBalance: 12500.75,
+    status: 'ACTIVE',
+    openDate: '2020-01-15',
+  },
+  {
+    id: 'acc-3',
+    customerId: '1',
+    accountNumber: '001-23456-80',
+    accountType: 'SAVINGS',
+    currency: 'USD',
+    balance: 25000.00,
+    availableBalance: 25000.00,
+    status: 'ACTIVE',
+    openDate: '2021-06-10',
+    interestRate: 2.5,
+  },
+  {
+    id: 'acc-4',
+    customerId: '2',
+    accountNumber: '002-98765-43',
+    accountType: 'SAVINGS',
+    currency: 'CRC',
+    balance: 3000000.00,
+    availableBalance: 3000000.00,
+    status: 'ACTIVE',
+    openDate: '2022-03-01',
+    interestRate: 3.5,
+  },
+];
+
+export const MOCK_TRANSACTIONS: Transaction[] = [
+  {
+    id: 'tx-1',
+    accountId: 'acc-1',
+    type: 'DEPOSIT',
+    amount: 500000,
+    currency: 'CRC',
+    description: 'Depósito en efectivo',
+    date: '2026-01-28T10:30:00Z',
+    balance: 5250000.50,
+    reference: 'DEP-20260128-001',
+  },
+  {
+    id: 'tx-2',
+    accountId: 'acc-1',
+    type: 'WITHDRAWAL',
+    amount: 250000,
+    currency: 'CRC',
+    description: 'Retiro ATM',
+    date: '2026-01-27T15:45:00Z',
+    balance: 4750000.50,
+    reference: 'ATM-20260127-523',
+  },
+  {
+    id: 'tx-3',
+    accountId: 'acc-1',
+    type: 'TRANSFER',
+    amount: 100000,
+    currency: 'CRC',
+    description: 'Transferencia a cuenta propia',
+    date: '2026-01-26T09:15:00Z',
+    balance: 5000000.50,
+    reference: 'TRF-20260126-789',
+  },
+  {
+    id: 'tx-4',
+    accountId: 'acc-2',
+    type: 'DEPOSIT',
+    amount: 1500,
+    currency: 'USD',
+    description: 'Transferencia ACH',
+    date: '2026-01-25T14:20:00Z',
+    balance: 12500.75,
+    reference: 'ACH-20260125-456',
+  },
+  {
+    id: 'tx-5',
+    accountId: 'acc-2',
+    type: 'FEE',
+    amount: 5,
+    currency: 'USD',
+    description: 'Comisión mantenimiento',
+    date: '2026-01-01T00:00:00Z',
+    balance: 11000.75,
+    reference: 'FEE-20260101-MAINT',
+  },
+];
+
+export const MOCK_CDPS: CDP[] = [
+  {
+    id: 'cdp-1',
+    customerId: '1',
+    cdpNumber: 'CDP-001-2024',
+    amount: 10000,
+    currency: 'USD',
+    interestRate: 5.5,
+    termMonths: 12,
+    startDate: '2024-01-15',
+    maturityDate: '2025-01-15',
+    status: 'ACTIVE',
+    autoRenew: true,
+  },
+  {
+    id: 'cdp-2',
+    customerId: '1',
+    cdpNumber: 'CDP-002-2025',
+    amount: 5000000,
+    currency: 'CRC',
+    interestRate: 6.0,
+    termMonths: 6,
+    startDate: '2025-08-01',
+    maturityDate: '2026-02-01',
+    status: 'ACTIVE',
+    autoRenew: false,
+  },
+];
+
+export const MOCK_TRANSFERS: Transfer[] = [
+  {
+    id: 'trf-1',
+    fromAccountId: 'acc-1',
+    toAccountId: 'acc-3',
+    amount: 100000,
+    currency: 'CRC',
+    description: 'Ahorro mensual',
+    type: 'OWN',
+    status: 'COMPLETED',
+    date: '2026-01-26T09:15:00Z',
+    reference: 'TRF-20260126-789',
+  },
+];
+
+// Usuarios para login (password hasheado en producción, aquí simplificado)
+export const MOCK_USERS = [
+  {
+    email: 'demo@multimoney.com',
+    password: 'Demo123!', // En producción usar bcrypt
+    customerId: '1',
+    mfaEnabled: true,
+  },
+  {
+    email: 'maria@multimoney.com',
+    password: 'Maria123!',
+    customerId: '2',
+    mfaEnabled: true,
+  },
+];
