@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 @theme {
   /* Multimoney Brand Colors */
@@ -20,7 +19,7 @@
 body {
   background: var(--color-mm-white);
   color: var(--color-mm-black);
-  font-family: 'Plus Jakarta Sans', 'Circular', system-ui, sans-serif;
+  font-family: var(--font-plus-jakarta), 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
 /* Utility classes */

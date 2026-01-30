@@ -2,14 +2,14 @@
 > prototipo-web-banking@1.0.0 dev
 > concurrently "npm run dev:backend" "npm run dev:frontend"
 
-[1] 
-[1] > prototipo-web-banking@1.0.0 dev:frontend
-[1] > cd frontend && npm run dev
-[1] 
 [0] 
 [0] > prototipo-web-banking@1.0.0 dev:backend
 [0] > cd backend && npm run start:dev
 [0] 
+[1] 
+[1] > prototipo-web-banking@1.0.0 dev:frontend
+[1] > cd frontend && npm run dev
+[1] 
 [1] 
 [1] > frontend@0.1.0 dev
 [1] > next dev
@@ -20,61 +20,39 @@
 [0] 
 [1] You are using Node.js 18.20.8. For Next.js, Node.js version ">=20.9.0" is required.
 [1] npm run dev:frontend exited with code 1
-[0] [2J[3J[H[[90m12:15:16 PM[0m] Starting compilation in watch mode...
+[0] [2J[3J[H[[90m12:16:04 PM[0m] Starting compilation in watch mode...
 [0] 
-[0] [[90m12:15:17 PM[0m] Found 0 errors. Watching for file changes.
+[0] [[90m12:16:05 PM[0m] Found 0 errors. Watching for file changes.
 [0] 
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +4ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAccountModule dependencies initialized[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTransferModule dependencies initialized[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCdpModule dependencies initialized[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCustomerModule dependencies initialized[39m[38;5;3m +1ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/v1/auth}:[39m[38;5;3m +1ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/auth/login, POST} route[39m[38;5;3m +1ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/auth/verify-mfa, POST} route[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/auth/profile, GET} route[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/auth/logout, POST} route[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAccountController {/api/v1/accounts}:[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/accounts, GET} route[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/accounts/:id, GET} route[39m[38;5;3m +1ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/accounts/:id/transactions, GET} route[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransferController {/api/v1/transfers}:[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/transfers, GET} route[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/transfers, POST} route[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/transfers/validate, POST} route[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCdpController {/api/v1/cdp}:[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/cdp, GET} route[39m[38;5;3m +1ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/cdp/:id, GET} route[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/cdp, POST} route[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/cdp/simulate, POST} route[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCustomerController {/api/v1/customer}:[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/customer, GET} route[39m[38;5;3m +0ms[39m
-[0] [32m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
-[0] [31m[Nest] 51921  - [39m01/30/2026, 12:15:17 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::4000[39m[38;5;3m +1ms[39m
-[0] node:internal/errors:496
-[0]     ErrorCaptureStackTrace(err);
-[0]     ^
-[0] 
-[0] Error: listen EADDRINUSE: address already in use :::4000
-[0]     at __node_internal_captureLargerStackTrace (node:internal/errors:496:5)
-[0]     at __node_internal_uvExceptionWithHostPort (node:internal/errors:593:12)
-[0]     at Server.setupListenHandle [as _listen2] (node:net:1817:16)
-[0]     at listenInCluster (node:net:1865:12)
-[0]     at Server.listen (node:net:1953:7)
-[0]     at ExpressAdapter.listen (/Users/andrescoto/Prototipo-Web-Banking/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
-[0]     at /Users/andrescoto/Prototipo-Web-Banking/backend/node_modules/@nestjs/core/nest-application.js:188:30
-[0]     at new Promise (<anonymous>)
-[0]     at NestApplication.listen (/Users/andrescoto/Prototipo-Web-Banking/backend/node_modules/@nestjs/core/nest-application.js:178:16)
-[0]     at bootstrap (/Users/andrescoto/Prototipo-Web-Banking/backend/src/main.ts:15:3) {
-[0]   code: 'EADDRINUSE',
-[0]   errno: -48,
-[0]   syscall: 'listen',
-[0]   address: '::',
-[0]   port: 4000
-[0] }
-[0] 
-[0] Node.js v18.20.8
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +5ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAccountModule dependencies initialized[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTransferModule dependencies initialized[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCdpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCustomerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/v1/auth}:[39m[38;5;3m +1ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/auth/verify-mfa, POST} route[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/auth/profile, GET} route[39m[38;5;3m +1ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAccountController {/api/v1/accounts}:[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/accounts, GET} route[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/accounts/:id, GET} route[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/accounts/:id/transactions, GET} route[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransferController {/api/v1/transfers}:[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/transfers, GET} route[39m[38;5;3m +1ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/transfers, POST} route[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/transfers/validate, POST} route[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCdpController {/api/v1/cdp}:[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/cdp, GET} route[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/cdp/:id, GET} route[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/cdp, POST} route[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/cdp/simulate, POST} route[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCustomerController {/api/v1/customer}:[39m[38;5;3m +0ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/customer, GET} route[39m[38;5;3m +1ms[39m
+[0] [32m[Nest] 53254  - [39m01/30/2026, 12:16:05 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +0ms[39m
+[0] 🚀 Backend running on http://localhost:4000/api/v1
+[0] npm run dev:backend exited with code SIGTERM
